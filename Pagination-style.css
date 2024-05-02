@@ -6,6 +6,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
 }
 
 .pagination-container {
@@ -19,9 +21,11 @@ body {
 .btn {
   width: 48px;
   height: 48px;
+  cursor: pointer;
   border: 1px solid #087f5b;
   border-radius: 50%;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background: none;
 }
 
 .btn:hover {
@@ -32,6 +36,11 @@ body {
   width: 24px;
   height: 24px;
   stroke: #087f5b;
+  stroke-width: 3;
+}
+
+.btn:hover .btn-icon {
+  stroke: #ffffff;
 }
 
 .page-number:link {
@@ -49,12 +58,9 @@ body {
   background-color: #087f5b;
 }
 
-.page-number:hover {
-  color: #ffffff;
-  background-color: #087f5b;
-}
-
+.page-number:hover,
 .page-number:active {
+  color: #ffffff;
   background-color: #087f5b;
 }
 
